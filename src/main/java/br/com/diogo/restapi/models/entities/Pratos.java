@@ -19,7 +19,9 @@ public class Pratos {
     @Min(0)
     private double preco;
 
-    @OneToMany
+
+
+    @ManyToMany
     private List<Pedidos> pedidos;
 
     public int getId() {

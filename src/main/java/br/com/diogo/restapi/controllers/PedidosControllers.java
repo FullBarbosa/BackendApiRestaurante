@@ -17,7 +17,7 @@ import java.util.Optional;
 @CrossOrigin
 @RestController
 @RequestMapping(path = "/api/pedidos")
-public class PedidosControllers {
+public class  PedidosControllers {
 
     @Autowired
     private PedidosRepository pedidosRepository;

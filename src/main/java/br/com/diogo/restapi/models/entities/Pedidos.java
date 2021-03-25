@@ -14,6 +14,17 @@ public class Pedidos {
     private int mesa;
     private String status;
 
+    @ManyToMany
+    private List<Pratos> prato;
+
+    public List<Pratos> getPrato() {
+        return prato;
+    }
+
+    public void setPrato(List<Pratos> prato) {
+        this.prato = prato;
+    }
+
     public String getStatus() {
         return status;
     }
@@ -22,8 +33,9 @@ public class Pedidos {
         this.status = status;
     }
 
-    @ManyToOne
-    private Pratos prato;
+
+
+
 
     public int getId() {
         return id;
@@ -41,11 +53,5 @@ public class Pedidos {
         this.mesa = mesa;
     }
 
-    public Pratos getPrato() {
-        return prato;
-    }
 
-    public void setPrato(Pratos prato) {
-        this.prato = prato;
-    }
 }
